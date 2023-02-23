@@ -25,6 +25,7 @@ html {
   
   a:hover {
     color: white;
+    cursor: pointer;
   }
   
   a:active {
