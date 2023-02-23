@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Webbed Site</title>
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+    <div class="navBar">
+      <nav>
+        <a>Home</a>
+        <a>About</a>
+        <a>Contact</a>
+        <a>Commissions</a>
+      </nav>
+    </div>
+    <div class="introBio">
+      <h1>Connor McNamee</h1>
+      <h3>Graphic Designer & Illustrator</h3>
+      <p></p>
+    </div>
+  </body>
+</html>
