@@ -61,7 +61,7 @@ html {
     align-items: baseline;
   }
 
-  footer, a {
+  .socIcon {
     color: white;
     size: 150%;
   }
