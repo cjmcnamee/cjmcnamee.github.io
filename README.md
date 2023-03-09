@@ -1,2 +1,2 @@
 # Domain
-Web Design 2 Week 2 Spring 2023
+Web Design 2 Spring 2023
