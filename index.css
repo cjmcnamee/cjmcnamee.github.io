@@ -19,16 +19,23 @@ html {
   
   a {
     color: skyblue;
+    text-decoration: none;
     font-size: 1.3em;
     margin: 30px;
   }
   
+  a:visted {
+    text-decoration: none;
+  }
+
   a:hover {
     color: white;
+    text-decoration: none;
     cursor: pointer;
   }
   
   a:active {
+    text-decoration: none;
     color: white;
   }
   
@@ -46,4 +53,12 @@ html {
   
   .introBio {
     margin: 30px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .navBar {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
   }
