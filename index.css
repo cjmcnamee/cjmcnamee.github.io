@@ -68,4 +68,8 @@ html {
       justify-content: center;
       align-items: center;
     }
+
+    form {
+      margin-top: 20px;
+    };
   }
