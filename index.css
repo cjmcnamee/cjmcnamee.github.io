@@ -1,87 +1,79 @@
 html {
+  background-color: black;
+  font-family: sans-serif;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+h1 {
+  color: white;
+  margin-bottom: -15px;
+}
+
+h3 {
+  color: skyblue;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.headerButton {
+  color: skyblue;
+  text-decoration: none;
+  font-size: 1.3em;
+  margin: 30px;
+}
+
+.headerButton:visited {
+  text-decoration: none;
+}
+
+.headerButton:hover {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.headerButton:active {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  color: lightgray;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 30px;
+}
+
+img {
+  max-height: 50%;
+}
+
+#aboutPage {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  html {
     background-color: black;
     font-family: sans-serif;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   
-  h1 {
-    color: white;
-    margin-bottom: -15px;
-  }
-  
-  h3 {
-    color: skyblue;
-    font-weight: normal;
-    font-style: italic;
-  }
-  
-  .homeButton {
-    color: skyblue;
-    text-decoration: none;
-    font-size: 1.3em;
-    margin: 30px;
-  }
-  
-  .homeButton:visited {
-    text-decoration: none;
-  }
-
-  .homeButton:hover {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .homeButton:active {
-    text-decoration: none;
-    color: white;
-  }
-  
-  p {
-    color: darkgrey;
-  }
-  
-  .navBar {
+  header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    margin: 30px;
-  }
-  
-  .introBio {
-    margin: 30px;
-  }
-
-  footer {
-    display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
   }
 
-  .socIcon {
-    color: white;
-    size: 150%;
-  }
-
-  @media only screen and (max-width: 800px) {
-    html {
-      background-color: black;
-      font-family: sans-serif;
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-    
-    .navBar {
-      display: flex;
-      flex-direction: column-reverse;
-      justify-content: center;
-      align-items: center;
-    }
-
-    form {
-      margin-top: 20px;
-    };
-  }
+  form {
+    margin-top: 40px;
+  };
+}

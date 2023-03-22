@@ -2,46 +2,38 @@
   <head>
     <title>Connor McNamee's Portfolio Website</title>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" type="text/css" href="https://cjmcnamee.github.io/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="javascript" href="https://cjmcnamee.github.io/index.js">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="index.js"></script>
   </head>
   <body>
-    <div class="navBar">
-      <div class="searchBar">
+    <header>
+      <div id="searchBar">
         <form>
-          <input type="text" id="searchQ" name="searchQ" autocomplete="on" list="suggestions" onekeydown="">
-          <button type="button" id="buttonOne" onclick="">Search</button>
+          <input type="text" id="searchQ" name="searchQ" autocomplete="on" list="suggestions" onkeydown="handleKey(event)">
+          <button type="button" id="buttonOne" onclick='inputImg()'>Search</button>
         </form>
       </div>
       <div>
-        <a href="#" class="homeButton">Home</a>
-        <a href="#" class="homeButton">About</a>
-        <a href="#" class="homeButton">Contact</a>
+        <a href="index.html" class="headerButton" id="homeButton">Home</a>
+        <a type="button" class="headerButton" id="aboutButton">About</a>
       </div>
-    </div>
+    </header>
+
     <datalist id="suggestions">
-      <option value="commissions"></option>
-      <option value="projects"></option>
-      <option value="illustrations"></option>
-      <option value="graphics"></option>
-      <option value="web design"></option>
-      <option value="graphic design"></option>
-    </datalist>
-    <div class="introBio">
-      <h1>Connor McNamee</h1>
-      <h3>Graphic Designer & Illustrator</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue tincidunt nisl, vitae feugiat erat laoreet vel. Cras varius feugiat erat, eu ornare arcu ullamcorper et. Nam auctor tempor rutrum. Pellentesque turpis magna, ullamcorper sit amet lacus a, pellentesque pellentesque orci. Nulla blandit nulla elit, sed facilisis enim aliquet ut. Donec tristique sollicitudin urna in convallis. Mauris nec urna eget est accumsan euismod. Aenean eu egestas arcu. Sed metus eros, placerat vitae lorem at, imperdiet semper nisl. Donec risus est, mollis in ornare a, ultrices cursus turpis. Vivamus efficitur metus ex, sit amet fermentum velit sollicitudin id. Aliquam erat volutpat. Integer et libero id lectus fringilla ornare.</p>
+        <option value="projects"></option>
+        <option value="illustrations"></option>
+        <option value="web design"></option>
+        <option value="graphic design"></option>
+      </datalist>
+
+    <div id="searchResults">
+        <p id="myText">Search Results</p>
+        <div id="portfolioSearchResults"></div>
     </div>
-    <div id="imgGrid">
-      <div class="imgElement">
-        <a href=""><img src="" alt=""></a>
-      </div>
+    
+    <div id="aboutPage">
+        <h1>About Me</h1>
+        <p id="aboutText">blah blah blah</p>
     </div>
-    <footer>
-      <a href="#" class="fa fa-twitter, socIcon"></a>
-      <a href="#" class="fa fa-tumblr, socIcon"></a>
-      <a href="#" class="fa fa-reddit, socIcon"></a>
-    </footer>
   </body>
 </html>
