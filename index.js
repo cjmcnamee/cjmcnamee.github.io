@@ -7,10 +7,10 @@ const myPortfolioArray = ["project", "projects", "Project", "Projects", "work", 
 
 var elem = document.createElement("img");
 
-var projects = ["cjmcnamee.github.io/Shark_Man.jpg","cjmcnamee.github.io/Lambda_Times.gif","cjmcnamee.github.io/Rick_And_Morty_Fanpage.gif","cjmcnamee.github.io/Space_Walkers.png","cjmcnamee.github.io/Space_Walkers_Mobile.png","cjmcnamee.github.io/UI_Home.png","cjmcnamee.github.io/My_Font.jpg"];
-var illustrations = ["cjmcnamee.github.io/Shark_Man.jpg"];
-var webD = ["cjmcnamee.github.io/Lambda_Times.gif","cjmcnamee.github.io/Rick_And_Morty_Fanpage.gif","cjmcnamee.github.io/Space_Walkers.png","cjmcnamee.github.io/Space_Walkers_Mobile.png","cjmcnamee.github.io/UI_Home.png"];
-var graphicD = ["cjmcnamee.github.io/My_Font.jpg","cjmcnamee.github.io/jpn4_logo.png"];
+var projects = ["Shark_Man.jpg","Lambda_Times.gif","Rick_And_Morty_Fanpage.gif","Space_Walkers.png","Space_Walkers_Mobile.png","UI_Home.png","My_Font.jpg"];
+var illustrations = ["Shark_Man.jpg"];
+var webD = ["Lambda_Times.gif","Rick_And_Morty_Fanpage.gif","Space_Walkers.png","Space_Walkers_Mobile.png","UI_Home.png"];
+var graphicD = ["My_Font.jpg","jpn4_logo.png"];
 
 function handleKey(event) {
     if (event.keyCode === 13) {
