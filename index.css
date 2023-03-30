@@ -5,22 +5,79 @@ html {
   margin-right: 100px;
 }
 
-h1 {
-  color: white;
-  margin-bottom: -15px;
-}
-
 h3 {
   color: skyblue;
   font-weight: normal;
   font-style: italic;
 }
 
+p {
+  color: lightgray;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 30px;
+}
+
+form {
+  height: 100%;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#searchQ[type=text]{
+  color: gray;
+  font-size: 1em;
+  width: 75%;
+  border: 2px solid gray;
+  border-radius: 2px;
+  background-color: white;
+}
+
+#searchQ[type=text]:focus {
+  text-decoration: none;
+  color: black;
+}
+
+#buttonOne {
+  border: 2px solid gray;
+  border-radius: 2px;
+  text-decoration: none;
+  color: white;
+  background-color: gray;
+  padding: 5px;
+  font-size: .9em;
+}
+
+#buttonOne:hover {
+  background-color: skyblue;
+  border: 2px solid white;
+}
+
+#buttonOne:active {
+  border: 2px solid skyblue;
+  border-radius: 2px;
+  color: skyblue;
+  background-color: black;
+}
+
+#navBar {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .headerButton {
   color: skyblue;
   text-decoration: none;
   font-size: 1.3em;
-  margin: 30px;
 }
 
 .headerButton:visited {
@@ -38,20 +95,16 @@ h3 {
   color: white;
 }
 
-p {
-  color: lightgray;
-}
-
-header {
+#portfolioSearchResults {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
-  margin: 30px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-img {
-  max-height: 50%;
+.projects {
+  size: 30%;
 }
 
 #aboutPage {
@@ -72,8 +125,26 @@ img {
     justify-content: center;
     align-items: center;
   }
-
+  
   form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #searchBar {
     margin-top: 40px;
-  };
+    margin-bottom: 20px;
+  }
+  
+  #buttonOne {
+    margin-top: 10px;
+  }
+  
+  #portfolioSearchResults {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
