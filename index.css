@@ -1,4 +1,5 @@
 html {
+  width: 2000px;
   background-color: black;
   font-family: sans-serif;
   margin-left: 100px;
@@ -147,4 +148,7 @@ form {
     justify-content: flex-start;
     align-items: flex-start;
   }
+  
+  .project {
+    width: 100%;
 }
