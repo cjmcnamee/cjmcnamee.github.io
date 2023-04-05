@@ -31,6 +31,11 @@ form {
   justify-content: space-between;
 }
 
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
 #searchQ {
   color: gray;
   font-size: 1em;
@@ -99,12 +104,13 @@ form {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: top;
 }
 
 .project {
-  size: 30%;
+  width: 23%;
+  box-sizing: border-box;
 }
 
 #aboutPage {
@@ -149,6 +155,7 @@ form {
   }
   
   .project {
+    max-width: 480px;
     width: 100%;
   }
 }
