@@ -36,6 +36,10 @@ p {
   font-size: 1.5em;
 }
 
+img {
+  border-radius: 10px; 
+}
+
 #homeButton {
   display: flex;
   justify-content: center;
