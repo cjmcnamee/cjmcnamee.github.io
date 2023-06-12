@@ -1,39 +1,44 @@
 <!DOCTYPE html>
-  <head>
-    <title>Connor McNamee's Portfolio Website</title>
-    <meta charset="utf-8"/>
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <script src="index.js"></script>
-  </head>
-  <body>
-    <header>
-      <div id="searchBar">
-        <form>
-          <input type="text" id="searchQ" name="searchQ" autocomplete="on" list="suggestions" onkeydown="handleKey(event)">
-          <button type="button" id="buttonOne" onclick='inputImg()'>Search</button>
-        </form>
-      </div>
-      <div id="navBar">
-        <a href="https://cjmcnamee.github.io/" class="headerButton" id="homeButton">Home</a>
-        <a type="button" class="headerButton" id="aboutButton">About</a>
-      </div>
-    </header>
-
-    <datalist id="suggestions">
-        <option value="projects"></option>
-        <option value="illustrations"></option>
-        <option value="web design"></option>
-        <option value="graphic design"></option>
-      </datalist>
-
-    <div id="searchResults">
-        <p id="myText">Search Results</p>
-        <div id="portfolioSearchResults"></div>
-    </div>
-    
-    <div id="aboutPage">
-        <h1>About Me</h1>
-        <p id="aboutText">blah blah blah</p>
-    </div>
-  </body>
+    <head>
+        <title>Connor McNamee's Portfolio</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="homeButton">
+                <a class="headerButton" href="">Home</a>
+            </div>
+            <div id="headerDiv">
+                <a class="headerButton" href="aboutMe">About</a>
+                <a class="headerButton" href="">Works</a>
+                <a class="headerButton" href="">Contact</a>
+            </div>
+        </header>
+            <div id="introDiv">
+                <h1>Welcome to Connor McNamee's Portfolio Website<h2>
+            </div>
+            <div id="caroDiv">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        <div id="aboutMe">
+            <div id="aboutTitle">
+                <h2>About Me</h2>
+            </div>
+            <div id="picAndIntro">
+                <img src="headshot.jpg" alt="headshot">
+                <p>I'm a UX/UI designer who grew up between Boston and Montréal, and I now live in Santa Monica. My work showcases a diverse set of skills in art, foreign language, and design. I expect that cultivating these talents will mean a flexible career in many different fields of design including graphic design, web design, product design, etc. My goals are to work with designers from around the world, to build a healthy work-life balance, and to filter my creativity through various disciplines of design.</p>
+            </div>
+          <a class="workLink" href="">Click Here To View My Work >></a>
+        </div> 
+        <footer>
+            <a href="">twitter</a>
+            <a href="">instagram</a>
+            <a href="">linkedin</a>
+            <a href="">github</a>
+        </footer>
+    </body>
 </html>
