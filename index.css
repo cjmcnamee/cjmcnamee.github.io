@@ -1,161 +1,106 @@
 html {
-  background-color: black;
+  background-color: #272b2e;
   font-family: sans-serif;
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
-h3 {
-  color: skyblue;
-  font-weight: normal;
-  font-style: italic;
-}
-
-p {
-  color: lightgray;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: baseline;
-  margin-top: 30px;
+  padding: 10px;
+  border: 5px solid #04d9ff;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  margin-top: -11px;
 }
 
-form {
-  height: 100%;
-  width: 400px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-img {
-  max-height: 100%;
-  max-width: 100%;
-}
-
-#searchQ {
-  color: gray;
-  font-size: 1em;
-  width: 75%;
-  border: 2px solid gray;
-  border-radius: 2px;
-  background-color: white;
-}
-
-#searchQ:focus {
+a {
+  font-size: 2em;
+  font-weight: bold;
   text-decoration: none;
-  color: black;
 }
 
-#buttonOne {
-  border: 2px solid gray;
-  border-radius: 2px;
-  text-decoration: none;
-  color: white;
-  background-color: gray;
-  padding: 5px;
-  font-size: .9em;
+h1 {
+  font-size: 4em;
+  color: violet;
 }
 
-#buttonOne:hover {
-  background-color: skyblue;
-  border: 2px solid white;
+h2 {
+  font-size: 2.5em;
+  color: #D7FF04;
 }
 
-#buttonOne:active {
-  border: 2px solid skyblue;
-  border-radius: 2px;
-  color: skyblue;
-  background-color: black;
+p {
+  color: #D7FF04;
+  font-size: 1.5em;
 }
 
-#navBar {
-  width: 200px;
+#homeButton {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  width: 20%;
 }
 
 .headerButton {
-  color: skyblue;
-  text-decoration: none;
-  font-size: 1.3em;
-}
-
-.headerButton:visited {
-  text-decoration: none;
+  color: #04d9ff;
 }
 
 .headerButton:hover {
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
+  color: orange;
+  text-decoration: underline;
 }
 
-.headerButton:active {
-  text-decoration: none;
-  color: white;
+#headerDiv {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
 }
 
-#portfolioSearchResults {
+#introDiv {
+  background-color: yellow;
+  padding: 1px 0px 1px 20px;
+  border-radius: 10px 10px 0 0;
+  margin-top: 75px
+}
+
+#caroDiv {
+  padding: 200px;
+  border: 5px dotted yellow;
+  border-top: none;
+  border-radius: 0 0 15px 15px;
+}
+
+#aboutMe {
+  display: flex;
+  flex-direction: column;
+  border: 5px dashed pink;
+  margin-top: 75px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+#aboutTitle {
+  padding: 0 20px;
+}
+
+#picAndIntro {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: top;
+  align-items: baseline;
+  padding: 20px;
 }
 
-.project {
-  width: 23%;
-  box-sizing: border-box;
+.workLink {
+  color: pink;
+  background-color: #D7FF04;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-#aboutPage {
-  display: none;
-}
-
-@media only screen and (max-width: 800px) {
-  html {
-    background-color: black;
-    font-family: sans-serif;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  
-  header {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  form {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  #searchBar {
-    margin-top: 40px;
-    margin-bottom: 20px;
-  }
-  
-  #buttonOne {
-    margin-top: 10px;
-  }
-  
-  #portfolioSearchResults {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  
-  .project {
-    max-width: 480px;
-    width: 100%;
-  }
+.workLink:hover {
+  color: #D7FF04;
+  background-color: pink;
+  text-decoration: underline;
 }
