@@ -139,3 +139,11 @@ img {
   background-color: pink;
   text-decoration: underline;
 }
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: yellow;
+  color: pink;
+}
