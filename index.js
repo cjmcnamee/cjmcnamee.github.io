@@ -1,65 +1,28 @@
-var portfolioSearch = "";
+let slideIndex = 1;
+showSlides(slideIndex);
 
-var artL = "illustrations";
-var wDesign = "web design";
-var gDesign = "graphic design";
-const myPortfolioArray = ["project", "projects", "Project", "Projects", "work", "works", "Work", "Works"];
-
-var elem = document.createElement("img");
-
-var projects = ["Shark_Man.jpg","Lambda_Times.gif","Rick_And_Morty_Fanpage.gif","Space_Walkers.png","Space_Walkers_Mobile.png","UI_Home.png","My_Font.jpg"];
-var illustrations = ["Shark_Man.jpg"];
-var webD = ["Lambda_Times.gif","Rick_And_Morty_Fanpage.gif","Space_Walkers.png","Space_Walkers_Mobile.png","UI_Home.png"];
-var graphicD = ["My_Font.jpg","jpn4_logo.png"];
-
-function handleKey(event) {
-    if (event.keyCode === 13) {
-        event.preventDefault();
-        document.getElementById("buttonOne").click();
-    }
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-function inputImg() {
-    portfolioSearch = document.getElementById("searchQ").value;
-    if (myPortfolioArray.includes(portfolioSearch)) {
-        for (var c in projects) {
-            var newElement = document.createElement('div');
-            newElement.id = projects[c]; 
-            newElement.className = "project";
-            newElement.innerHTML = `<img src=\"${projects[c]}\">`;
-            document.getElementById("myText").innerHTML = `Search results for "${portfolioSearch}"`;
-            document.getElementById("portfolioSearchResults").appendChild(newElement);
-        }
-    } else if (portfolioSearch == artL) {
-        for (var c in illustrations) {
-            var newElement = document.createElement('div');
-            newElement.id = illustrations[c]; 
-            newElement.className = "project";
-            newElement.innerHTML = `<img src=\"${illustrations[c]}\">`;
-            document.getElementById("myText").innerHTML = `Search results for "${portfolioSearch}"`;
-            document.getElementById("portfolioSearchResults").appendChild(newElement);
-
-        }
-    } else if (portfolioSearch == wDesign) {
-        for (var c in webD) {
-            var newElement = document.createElement('div');
-            newElement.id = webD[c]; 
-            newElement.className = "project";
-            newElement.innerHTML = `<img src=\"${webD[c]}\">`;
-            document.getElementById("myText").innerHTML = `Search results for "${portfolioSearch}"`;
-            document.getElementById("portfolioSearchResults").appendChild(newElement);
-
-        }
-    } else if (portfolioSearch == gDesign) {
-        for (var c in graphicD) {
-            var newElement = document.createElement('div');
-            newElement.id = graphicD[c]; 
-            newElement.className = "project";
-            newElement.innerHTML = `<img src=\"${graphicD[c]}\">`;
-            document.getElementById("myText").innerHTML = `Search results for "${portfolioSearch}"`;
-            document.getElementById("portfolioSearchResults").appendChild(newElement);
-        }
-    } else { 
-        document.getElementById("myText").innerHTML = `"${portfolioSearch}" not found`;
-     }
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
 }
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+} 
